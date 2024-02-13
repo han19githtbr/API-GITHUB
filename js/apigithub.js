@@ -5,10 +5,12 @@ const ul = document.querySelector('#listProject')
 
     //if(window.navigator.online == false) {
         function getApiGitHUB() {
+
+        const api = 'https://api.github.com/users/han19githtbr/repos'
         /* Fetch para fazer uma requisição */
         /* https://api.github.com/users/nomeUsuario/repos */
         /* fetch('https://api.github.com/users/bernadin18/repos') */
-        fetch('https://api.github.com/users/han19githtbr/repos')   
+        fetch(api)   
             .then(async response => {
 
             if(!response.ok) {
